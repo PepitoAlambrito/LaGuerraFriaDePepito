@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "name": "shop",
+  "command": "pepito_shop",
+  "title": {
+    "default": "Tienda",
+    "es_es": "Tienda",
+    "en_us": "Shop"
+  },
+  "width": 400,
+  "height": 300,
+  "dimBackground": true,
+  "pauseGame": false,
+  "elements": [
+    {
+      "id": "descripcion",
+      "type": "text",
+      "anchor": "CENTER",
+      "x": 0,
+      "y": -30,
+      "width": 220,
+      "height": 18,
+      "text": {
+        "default": "4 pan = 1 moneda de plata",
+        "es_es": "4 pan = 1 moneda de plata",
+        "en_us": "4 bread = 1 silver coin"
+      }
+    },
+    {
+      "id": "comprar_pan",
+      "type": "button",
+      "anchor": "CENTER",
+      "x": 0,
+      "y": 5,
+      "width": 180,
+      "height": 22,
+      "text": {
+        "default": "Comprar 4 panes",
+        "es_es": "Comprar 4 panes",
+        "en_us": "Buy 4 bread"
+      },
+      "tooltip": {
+        "default": "Cuesta 1 moneda de plata",
+        "es_es": "Cuesta 1 moneda de plata",
+        "en_us": "Costs 1 silver coin"
+      },
+      "action": {
+        "type": "buy_item",
+        "parameters": {
+          "item": "minecraft:bread",
+          "count": "4",
+          "currency": "pepitotech:silver_coin",
+          "cost": "1"
+        }
+      }
+    }
+  ]
+}
